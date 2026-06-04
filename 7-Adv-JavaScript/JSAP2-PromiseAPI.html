@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            JavaScript Programming
+        </title>
+        <script>
+            let myPromise = new Promise(function(resolve, reject) {
+                let success = false;
+                if (success) {
+                    resolve("All good!");
+                } else {
+                    reject("Something failed!");
+                }
+            });
+            myPromise
+            .then(function(result) {
+                console.log(result);
+            })
+            .catch(function(error) {
+                console.error(error);
+            });
+        </script>
+    </head>
+</html>

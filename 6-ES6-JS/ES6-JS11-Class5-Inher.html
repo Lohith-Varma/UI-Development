@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>ES6 Programming</title>
+    </head>
+    <body>
+        <h1>JavaScript. Classes</h1>
+        <script>
+            //BMW
+            class Car {
+                //BMW
+                brand = "BMW";
+                //constructor close
+                display() {
+                    document.write("<br> My car is : "+this.brand);
+                }
+            } //class close
+            
+            car = new Car("BMW");
+            car.display();
+            
+            class Myclass extends Car{
+                mydata() {
+                    document.write("<br> Myclass method");
+                }
+            }
+            var myc = new Myclass();
+            myc.mydata();
+            myc.display();
+            document.write("<br> My Brand is : "+myc.brand);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>ES6 Programming</title>
+    </head>
+    <body>
+        <h1>JavaScript. Classes</h1>
+        <script>
+            class Person {
+                //Lohith 20
+                constructor(name,age) {
+                    this.name = name;
+                    this.age = age;
+                }
+                
+                display() {
+                    console.log("Name : "+this.name);
+                    console.log("Age : "+this.age);
+                } //display() class
+                
+                mydata() {
+                    console.log("Hello mydata method");
+                }
+            } //close class
+            
+            var myperson = new Person("Lohith",20);
+            myperson.display(); //method is calling
+            myperson.mydata();
+        </script>
+    </body>
+</html>

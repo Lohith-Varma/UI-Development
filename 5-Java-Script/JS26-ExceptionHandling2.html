@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+            Exception handling with finally
+        </title>
+        <script>
+            function divide(a,b)
+            {
+                try{
+                    console.log("one");
+                    if(b==0)
+                    {
+                        throw new Error("Division by zero is not allowed");
+                    }
+                    let result = a / b;
+                    console.log("Result: " + result);
+                }
+                catch(error){
+                    console.error("Program is error: "+error);
+                }
+                finally{
+                    console.log("This block will always execute");
+                }
+            }
+            divide(10, 0);
+        </script>
+    </head>
+    <body>
+        <h1>Exception Handling with Finally Example</h1>
+        <p>Check the console for output.</p>
+    </body>
+</html>

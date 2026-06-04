@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="Yellow">
+    <h1>Registration Form</h1>
+    <form action="LoginPage.html">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" ><br><br>
+    
+        <label for="gender">Gender: </label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female<br><br>
+
+        <label for="department">Department: </label>
+        <select name="department" id="department">
+            <option value="cse">CSE</option>
+            <option value="ece">ECE</option>
+            <option value="mech">MECH</option>
+            <option value="civil">CIVIL</option>
+        </select><br><br>
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" ><br><br>
+
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password" ><br><br>
+
+        <label for="address">Address:</label>
+        <textarea name="address"  placeholder="Enter your Address..." rows="6" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Register">
+</body>
+</html>

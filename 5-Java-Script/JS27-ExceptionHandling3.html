@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            Exception handling
+        </title>
+        <script>
+            function checkAge(age) {
+                if (age < 18) {
+                    throw new Error("You must be at least 18 years old to access this content.");
+                }
+                return "Access granted.";
+            }
+            try {
+                let result = checkAge(2); //will throw error
+                document.write(result);
+            }
+            catch (err) {
+                document.write("Caught Exception Ram : "+ err);
+            }
+            finally {
+                document.write("<br> End of program.");
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Exception Handling Example</h1>
+        <p>Check the output for results.</p>
+    </body>
+</html>

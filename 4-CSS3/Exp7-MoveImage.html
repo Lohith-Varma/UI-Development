@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>CSS 3</title>
+        <style>
+            .mybox{
+                margin: 50px;
+                width: 1000px;
+                height: 1000px;
+                background: url(image.webp) no-repeat;
+                position: relative;
+                animation: repeatit 2s linear 1ms infinite alternate;
+            }
+            @keyframes repeatit {
+                from{left:0;} 
+                to{left:50%}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="mybox"></div>
+    </body>
+</html>

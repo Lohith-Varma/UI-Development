@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Java script Programming</title>
+        <script>
+            let mypromise= new Promise(function(resolve,reject){
+             setTimeout(function(){
+                 resolve("Data loaded after 5 seconds!!");
+             },5000);
+            });
+            mypromise.then(function(result)
+            {
+                console.log(result);
+            })
+        </script>
+    </head>
+    <body>
+        <h1>JavaScript..</h1>
+    </body>
+</html>

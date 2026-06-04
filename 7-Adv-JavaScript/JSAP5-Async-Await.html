@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Car Booking - Promise API</title>
+        <script>
+            //Step 1: Function that returns a Promise
+            function bookCar() {
+                console.log("Sending car booking request...");
+                
+                //Simulate delay (like server response)
+                setTimeout(function() {
+                    //Change this value to test seccess or failure
+                    let carAvailable = true;
+                    //true = success, false = failure
+                    if(carAvailable) {
+                        resolve("Car booked successfully!");
+                    } else {
+                        reject("No cars available. Please try again later.")
+                    }
+                }, 3000); //3 seconds delay
+            }
+
+            //step 2: async function to handle booking
+            async function startBooking() {
+                console.log("Starting car booking process...");
+                try {
+                    // Wait for the Promise to cmoplete
+                    let result = await bookCar();
+                    console.log(result);
+                    console.log("Enjoy your ride!");
+                }
+                catch(error) {
+                    console.log(error);
+                    console.log("Sorry for the inconvenience.");
+                }
+            }
+
+            //Step 3: Call the function
+            startBooking();
+        </script>
+    </head>
+    <body>
+        <h1>Car Booking using Promise API</h1>
+    </body>
+</html>
