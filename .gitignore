@@ -13,3 +13,5 @@ coverage/
 .cache/
 
 npm-debug.log*
+
+*.zip
