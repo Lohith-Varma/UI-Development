@@ -1,0 +1,15 @@
+node_modules/
+build/
+dist/
+coverage/
+
+.env
+.env.local
+
+*.log
+
+.vscode/
+
+.cache/
+
+npm-debug.log*
